@@ -19,18 +19,26 @@
 }
 
 .App main {
-  width: calc(100% - 4rem);
+  width: calc(100% - 2rem);
   margin: auto 0;
   max-width: 425px;
-  padding: 0 1rem;
+  min-height: calc(100px + 13.55rem);
+  padding: 1rem 0;
   color: #282c34;
   background: rgba(255,255,255,0.5);
   text-align: center;
 }
 
+.App main h2, h3, p {
+  margin: 0;
+}
 
-@media (min-width: 425px) {
-  .App main {
-    padding: 0;
-  }
+.App main h3{
+  font-size: 1.15;
+}
+
+.App main section {
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
 }
