@@ -32,7 +32,7 @@ function Info({ data }) {
       <p>
         Min: {Math.round(main.temp_min)}°C | Max: {Math.round(main.temp_max)}°C
       </p>
-      <p>Feels like: {main.feels_like}°C</p>
+      <p>Feels like: {Math.round(main.feels_like)}°C</p>
       <p>Pressure: {main.pressure} hPa</p>
       <p>Humidity: {main.humidity}%</p>
     </section>

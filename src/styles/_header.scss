@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   align-items: center;
   width: calc(100% - 0.5rem);
-  padding: 0 0.25rem;
+  padding: 0.25rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -37,18 +37,33 @@
   }
 
   button:disabled svg {
-    color: gray;
+    color: #D5D5D7;
     cursor: not-allowed;
   }
 
-  @media (max-width: 425px) {
+  form {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  form input[type="text"] {
+    height: 1.75rem;
+    flex: 1;
+  }
+
+  form input[type="submit"] {
+    height: calc(2rem + 2px);
+    margin-left: 0.25rem;
+  }
+
+  @media (min-width: 425px) {
     form {
-      width: 100%;
+      width: initial;
     }
 
-    input[type="text"],
-    input[type="submit"] {
-      flex: 1;
+    input[type="text"] {
+      flex: none;
     }
   }
 }
