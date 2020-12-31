@@ -7,11 +7,12 @@ function Header({
   onSubmitCity,
   tracking,
   toggleTracking,
+  buttonDisabled,
 }) {
   return (
     <header className="header">
       <h1>Weather Peeker</h1>
-      <button onClick={toggleTracking}>
+      <button onClick={toggleTracking} disabled={buttonDisabled}>
         {tracking ? <MdLocationOn /> : <MdLocationOff />}
       </button>
       <form onSubmit={onSubmitCity}>

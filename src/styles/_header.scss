@@ -36,6 +36,11 @@
     width: auto;
   }
 
+  button:disabled svg {
+    color: gray;
+    cursor: not-allowed;
+  }
+
   @media (max-width: 425px) {
     form {
       width: 100%;

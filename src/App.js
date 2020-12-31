@@ -38,6 +38,7 @@ function App() {
         onSubmitCity={onSubmitCity}
         toggleTracking={toggleTracking}
         tracking={tracking}
+        buttonDisabled={!latitude}
       />
       <Main fetchData={fetchData} />
     </div>
