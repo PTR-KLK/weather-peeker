@@ -9,7 +9,7 @@ function Header({
   toggleTracking,
 }) {
   return (
-    <header>
+    <header className="header">
       <h1>Weather Peeker</h1>
       <button onClick={toggleTracking}>
         {tracking ? <MdLocationOn /> : <MdLocationOff />}

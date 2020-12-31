@@ -5,7 +5,7 @@ function Main({ fetchData }) {
   const [data, loading, error, errorMsg] = fetchData;
 
   return (
-    <main>
+    <main className="main">
       {loading ? (
         <p>Loading...</p>
       ) : error ? (

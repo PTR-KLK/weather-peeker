@@ -1,0 +1,49 @@
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% - 0.5rem);
+  padding: 0 0.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  h1 {
+    font-size: 1.25rem;
+    margin: 0.25rem auto 0.25rem 0.25rem;
+  }
+
+  button,
+  form {
+    margin: 0 0.25rem;
+  }
+
+  button,
+  input[type="submit"] {
+    cursor: pointer;
+  }
+
+  button {
+    border: none;
+    background: none;
+    color: #fff;
+    padding: 0;
+    height: 1.75rem;
+  }
+
+  button svg {
+    height: 100%;
+    width: auto;
+  }
+
+  @media (max-width: 425px) {
+    form {
+      width: 100%;
+    }
+
+    input[type="text"],
+    input[type="submit"] {
+      flex: 1;
+    }
+  }
+}

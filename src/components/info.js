@@ -14,15 +14,15 @@ function Info({ data }) {
   } = data;
 
   return (
-    <>
+    <section className="info">
       <h2>
         {name}, {sys.country}
       </h2>
       <p>{convertDate(dt)}</p>
-      <section>
+      <span>
         <p>Sunrise: {convertTime(sys.sunrise)}</p>
         <p>Sunset: {convertTime(sys.sunset)}</p>
-      </section>
+      </span>
       <h3>{weather.main}</h3>
       <img
         src={`http://openweathermap.org/img/wn/${weather.icon}@2x.png`}
@@ -35,7 +35,7 @@ function Info({ data }) {
       <p>Feels like: {main.feels_like}°C</p>
       <p>Pressure: {main.pressure} hPa</p>
       <p>Humidity: {main.humidity}%</p>
-    </>
+    </section>
   );
 }
 

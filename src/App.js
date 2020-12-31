@@ -3,7 +3,6 @@ import Main from "./components/main";
 import Header from "./components/header";
 import useFetch from "./components/useFetch";
 import useLocation from "./components/useLocation";
-import "./App.css";
 
 function App() {
   const [formValue, setFormValue] = useState("");

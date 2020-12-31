@@ -1,0 +1,17 @@
+.info {
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+
+  h3 {
+    font-size: 1.15;
+  }
+
+  span {
+    display: flex;
+    margin: 1rem;
+    justify-content: space-between;
+  }
+}
