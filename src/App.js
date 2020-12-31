@@ -4,6 +4,9 @@ import Header from "./components/header";
 import useFetch from "./components/useFetch";
 import useLocation from "./components/useLocation";
 
+// create .env file in the root folder with contents:
+// REACT_APP_ID=YOUR_API_KEY
+
 function App() {
   const [formValue, setFormValue] = useState("");
   const [city, setCity] = useState("Warsaw");
