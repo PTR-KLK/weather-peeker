@@ -7,8 +7,10 @@
 
 .App header {
   display: flex;
-  width: 100%;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: calc(100% - 0.5rem);
+  padding: 0 0.25rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -16,6 +18,30 @@
 
 .App header h1 {
   font-size: 1.25rem;
+  margin: 0.25rem auto 0.25rem 0.25rem;
+}
+
+.App header button,
+form {
+  margin: 0 0.25rem;
+}
+
+.App header button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+.App header button {
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 0;
+  height: 1.75rem;
+}
+
+.App header button svg {
+  height: 100%;
+  width: auto;
 }
 
 .App main {
@@ -25,15 +51,17 @@
   min-height: calc(100px + 13.55rem);
   padding: 1rem 0;
   color: #282c34;
-  background: rgba(255,255,255,0.5);
+  background: rgba(255, 255, 255, 0.5);
   text-align: center;
 }
 
-.App main h2, h3, p {
+.App main h2,
+h3,
+p {
   margin: 0;
 }
 
-.App main h3{
+.App main h3 {
   font-size: 1.15;
 }
 
@@ -41,4 +69,15 @@
   display: flex;
   margin: 1rem;
   justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+  .App header form {
+    width: 100%;
+  }
+
+  input[type="text"],
+  input[type="submit"] {
+    flex: 1;
+  }
 }

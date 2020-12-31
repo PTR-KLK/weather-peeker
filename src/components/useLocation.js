@@ -1,12 +1,12 @@
 import { useState, useEffect } from "react";
 
 function useLocation() {
-  const [coords, setCoords] = useState([]);
-  const [success, setSuccess] = useState(false);
+  const [latitude, setLatitude] = useState('');
+  const [longitude, setLongitude] = useState('');
 
   const succcess = (position) => {
-    setCoords([position.coords.latitude, position.coords.longitude]);
-    setSuccess(true);
+    setLatitude(position.coords.latitude);
+    setLongitude(position.coords.longitude);
   }
 
   const error = (err) => {
@@ -15,9 +15,9 @@ function useLocation() {
 
   useEffect(() => {
     navigator.geolocation.getCurrentPosition(succcess,error);
-  }, [coords]);
+  }, []);
 
-  return [success, coords];
+  return [latitude, longitude];
 }
 
 export default useLocation;
